@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Response Beautifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JSON Response Beautifier</h1>
+            <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <textarea id="input" placeholder="Paste your JSON response here..."></textarea>
+            </div>
+            <div class="box">
+                <textarea id="output" placeholder="Formatted JSON will appear here..." readonly></textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="formatJson()">Format JSON</button>
+            <button onclick="minifyJson()">Minify JSON</button>
+            <button onclick="copyOutput()">Copy Output</button>
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
